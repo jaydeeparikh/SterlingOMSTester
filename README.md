@@ -37,6 +37,7 @@ When run in command line mode (from unix/linux/windows command prompt),  it read
 ##### Steps:
 - Download tester.tar file from []
 - Linux/Unix - Open a ssh session (putty terminal etc) 
+
   Windows – Open Command Prompt window.
 - Extract the contents of the tar file in your HOME folder (Linux/Unix - $HOME, Windows - %HOMEPATH%)
 
@@ -54,13 +55,16 @@ $ tar -xf tester.tar
 The tool can be run in two modes-
 -	Command Line mode
 -	Server mode
+
+
 Refer to the steps below for detail on running the tool.
 
 ---
 
 ### Running Sterling Test tool from Command Line:
--	Linux/Unix - Open a ssh session (putty terminal etc) 
-  Windows – Open Command Prompt window.
+-	Linux/Unix - Open a ssh session (putty terminal etc.) 
+
+  	Windows – Open Command Prompt window.
 
 -	Go to “tester” folder under the home folder.
 ```sh
@@ -95,12 +99,19 @@ Command line arguments supported by the tool are described at the end of this do
 Sterling Test tool can also be run in server mode to run multiple unit tests sequentially or in parallel.
 Once the server is running, use an HTTP client such as – browser, curl utility etc. to interact with the server.
 Running in Server Mode:
--	Go to “tester” folder under the home folder.
-cd  ~/tester			- Linux/Unix
-cd %HOMEPATH%\tester		- Windows
--	Inside the “tester” folder, use the following script to launch the test tool in server mode.
+
+- 	Go to “tester” folder under the home folder.
+```sh
+	cd  ~/tester			- Linux/Unix
+
+	cd %HOMEPATH%\tester		- Windows
+```
+- 	Inside the “tester” folder, use the following script to launch the test tool in server mode.
+
 			SterlingTestServer.sh		- Linux/Unix
+			
 			SterlingTestServer.bat		- Windows
+			
 ```sh
 Example commands-
 $ ./SterlingTestServer.sh   -nodebug
@@ -186,7 +197,8 @@ Parameter |	Description	| Example
 -k=	| Kind of component being tested. Default is oob (when parameter not specified)	| -k=custom -k=oob -k=service
 -nodebug | Optional parameter, without this flag the API/Service runs in verbose log mode | -nodebug
 -console | Display output xml on the screen (instead of saving as a file in home folder under tester/output  folder) | -console
-
+-ix= | to supply input xml as string  (instead of -i=) |-ix='<Order OrderHeaderKey=\"201906042102331198407\"/>'
+-tx= | to supply template xml as string  (instead of -t=) |-tx='<Order OrderNo=\"\" OrderDate=\"\" DocumentType=\"\"><OrderLines><OrderLine PrimeLineNo=\"\" SubLineNo=\"\" OrderedQty=\"\"><Item ItemID=\"\" UnitOfMeasure=\"\"/></OrderLine></OrderLines></Order>'
 
 
 
