@@ -119,7 +119,9 @@ $ ./SterlingTestServer.sh -port=9000  -timeout=1800000  -nodebug
 ```
 -	By default the server runs on port 9876 (when -port= parameter is not specified while launching server).
 - Log is displayed on the screen when -nodebug option is not used while launching the server.
+
   -timeout= parameter specifies number of milliseconds the user session will stay valid in Sterling OMS. If not specified, the default session timeout is 5 minutes (300000 millis).
+  
   -nodebug is an optional parameter, without this flag the API/Service runs in verbose log mode. Log output is displayed on the screen in server mode.
 
 -	Stopping Server-
