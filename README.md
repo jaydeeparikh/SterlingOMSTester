@@ -211,7 +211,7 @@ Parameter |	Description	| Example
 -nodebug | Optional parameter, without this flag the API/Service runs in verbose log mode | -nodebug
 -console | Display output xml on the screen (instead of saving as a file in home folder under tester/output  folder) | -console
 -ix= | to supply input xml as string  (instead of -i=) |-ix='<Order OrderHeaderKey=\"201906042102331198407\"/>'
--tx= | to supply template xml as string  (instead of -t=) |-tx='<Order OrderNo=\"\" OrderDate=\"\" DocumentType=\"\"><OrderLines><OrderLine PrimeLineNo=\"\" SubLineNo=\"\" OrderedQty=\"\"><Item ItemID=\"\" UnitOfMeasure=\"\"/></OrderLine></OrderLines></Order>'
+-tx= | to supply template xml as string  (instead of -t=) |-tx='&lt;Order OrderNo=\"\" OrderDate=\"\" DocumentType=\"\"&gt;&lt;OrderLines&gt;&lt;OrderLine PrimeLineNo=\"\" SubLineNo=\"\" OrderedQty=\"\"&gt;&lt;Item ItemID=\"\" UnitOfMeasure=\"\"/&gt;&lt;/OrderLine&gt;&lt;/OrderLines&gt;&lt;/Order&gt;'
 
 
 
