@@ -1,7 +1,9 @@
 # Sterling OMS Test Tool
 
-The tool speeds up unit testing of custom Java APIs, Synchronous Services, User Exit Java code, or any other Java code that exposes a public method with the signature (YFSEnvironment, Document). 
+
 It is a stand-alone, lightweight tool for Unit Testing Sterling OMS APIs and Services in isolation.
+
+The tool speeds up unit testing of custom Java APIs, Synchronous Services, User Exit Java code, or any other Java code that exposes a public method with the signature (YFSEnvironment, Document). 
 
 The tool requires:
 -	Access to Sterling OMS runtime folder contents
