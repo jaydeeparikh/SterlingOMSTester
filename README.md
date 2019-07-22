@@ -14,7 +14,7 @@ The tool requires:
 # Features
 -	Does not require Application Server instance to be running Sterling OMS Application.
 -	Does not require JMS/MQ Server or an Agent/Integration Server to be running.
--	A custom API/user exit Java class can be tested without including that class in custom jar (yfsextn.jar). (mode detail in notes section at the end)
+-	A custom API/user exit Java class can be tested without including that class in custom jar (eg: yfsextn.jar). (detail on this can be found in notes section at the end of this document)
 -	Test runs in isolation. It does not impact other developers using the same Sterling environment.
 -	Does not require additional code to be written to unit test the customer API code.
 
