@@ -182,11 +182,15 @@ Use following parameters to supply input xml and template xml from curl command.
 
     Example:
     If the class name is com.xyz.order.api.CustomProcessOrder
-	Copy the class file  in-
-            ~/tester/com/xyz/order/api folder 		    – Linux/Unix
-            %HOMEPATH%\tester\com\xyz\order\api folder 	– Windows
+    
+	The above example class file is to be copied to-
+	
+            ~/tester/com/xyz/order/api folder 		    	– Linux/Unix
+	    
+            %HOMEPATH%\tester\com\xyz\order\api folder 		– Windows
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command Line mode - after copying the class file, class should recognized by test tool.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Server mode - When using server mode, restart the server after copying the class in tester folder.
 
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IMPORTANT:** Remove the custom api java class from tester folder after testing is complete and the class has been included in custom jar (eg: yfsextn.jar).
