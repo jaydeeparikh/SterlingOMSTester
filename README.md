@@ -83,7 +83,11 @@ $ ./SterlingTester.sh -u=jaydeep.parikh   -p=thepassword    -c=com.xyz.order.api
 
 OOB API:
 $ ./SterlingTester.sh -c=getOrderDetails -k=oob -i=/tmp/go.xml -t=/tmp/t.xml -console -nolog
+```
 
+![OOB API](https://github.com/jaydeeparikh/SterlingOMSTester/blob/master/image/example1.jpg)
+
+```sh
 Synchronous Service:
 ./SterlingTester.sh -u=jaydeep.parikh -p=thepassword -c=ConfirmShipmentService -k=service -i=order.xml
 
@@ -134,7 +138,8 @@ $ ./SterlingTestServer.sh -port=9000  -timeout=1800000  -nodebug
 
 -	Open SterlingTester.html from tester folder, then fill-in and submit the form.
 
-(“Server DNS/IP & Port” in the screen shot below is the host and port where the test tool is running in server mode.)
+	(“Server DNS/IP & Port” in the screen shot below is the host and port where the test tool is running in server mode.)
+	![SterlingTester.html](https://github.com/jaydeeparikh/SterlingOMSTester/blob/master/image/form.jpg)
 
 -	Use curl client-
 ```sh
