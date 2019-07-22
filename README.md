@@ -1,7 +1,9 @@
 # Sterling OMS Test Tool
 
-The tool speeds up unit testing of custom Java APIs, Synchronous Services, User Exit Java code, or any other Java code that exposes a public method with the signature (YFSEnvironment, Document). 
+
 It is a stand-alone, lightweight tool for Unit Testing Sterling OMS APIs and Services in isolation.
+
+The tool speeds up unit testing of custom Java APIs, Synchronous Services, User Exit Java code, or any other Java code that exposes a public method with the signature (YFSEnvironment, Document). 
 
 The tool requires:
 -	Access to Sterling OMS runtime folder contents
@@ -12,7 +14,7 @@ The tool requires:
 # Features
 -	Does not require Application Server instance to be running Sterling OMS Application.
 -	Does not require JMS/MQ Server or an Agent/Integration Server to be running.
--	A custom API/user exit Java class can be tested without including that class in custom jar (yfsextn.jar). (mode detail in notes section at the end)
+-	A custom API/user exit Java class can be tested without including that class in custom jar (eg: yfsextn.jar). (detail on this can be found in notes section at the end of this document)
 -	Test runs in isolation. It does not impact other developers using the same Sterling environment.
 -	Does not require additional code to be written to unit test the customer API code.
 
@@ -180,11 +182,15 @@ Use following parameters to supply input xml and template xml from curl command.
 
     Example:
     If the class name is com.xyz.order.api.CustomProcessOrder
-	Copy the class file  in-
-            ~/tester/com/xyz/order/api folder 		    – Linux/Unix
-            %HOMEPATH%\tester\com\xyz\order\api folder 	– Windows
+    
+	The above example class file is to be copied to-
+	
+            ~/tester/com/xyz/order/api folder 		    	– Linux/Unix
+	    
+            %HOMEPATH%\tester\com\xyz\order\api folder 		– Windows
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command Line mode - after copying the class file, class should recognized by test tool.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Server mode - When using server mode, restart the server after copying the class in tester folder.
 
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IMPORTANT:** Remove the custom api java class from tester folder after testing is complete and the class has been included in custom jar (eg: yfsextn.jar).
@@ -205,7 +211,7 @@ Parameter |	Description	| Example
 -nodebug | Optional parameter, without this flag the API/Service runs in verbose log mode | -nodebug
 -console | Display output xml on the screen (instead of saving as a file in home folder under tester/output  folder) | -console
 -ix= | to supply input xml as string  (instead of -i=) |-ix='<Order OrderHeaderKey=\"201906042102331198407\"/>'
--tx= | to supply template xml as string  (instead of -t=) |-tx='<Order OrderNo=\"\" OrderDate=\"\" DocumentType=\"\"><OrderLines><OrderLine PrimeLineNo=\"\" SubLineNo=\"\" OrderedQty=\"\"><Item ItemID=\"\" UnitOfMeasure=\"\"/></OrderLine></OrderLines></Order>'
+-tx= | to supply template xml as string  (instead of -t=) |-tx='&lt;Order OrderNo=\"\" OrderDate=\"\" DocumentType=\"\"&gt;&lt;OrderLines&gt;&lt;OrderLine PrimeLineNo=\"\" SubLineNo=\"\" OrderedQty=\"\"&gt;&lt;Item ItemID=\"\" UnitOfMeasure=\"\"/&gt;&lt;/OrderLine&gt;&lt;/OrderLines&gt;&lt;/Order&gt;'
 
 
 
