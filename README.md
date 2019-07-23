@@ -178,9 +178,11 @@ Use following parameters to supply input xml and template xml from curl command.
 -	If the test tool server is not accessible from the browser, adjust the firewall rules on the VM or Antivirus service on Windows to open the server port 9876 (or the port specified with -port= parameter).
 
     In CentOS environment, use fw.sh script provided in ~/tester folder.
+```sh
                    ~/tester/fw.sh 9876
+```
 
--	To test a class by itself without including it in custom jar (eg: yfsextn.jar), copy the class file in “tester” folder in your home directory (~/tester  - Linux/Unit,  %HOMEPATH%\tester – Windows).
+-	To test a class by itself without including it in custom jar (eg: yfsextn.jar), copy the class file in “tester” folder in your home directory (~/tester  - Linux/Unix,  %HOMEPATH%\tester – Windows).
 
     Example:
     If the class name is com.xyz.order.api.CustomProcessOrder
