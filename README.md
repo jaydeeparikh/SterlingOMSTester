@@ -1,4 +1,8 @@
-<sub>[Download](https://github.com/jaydeeparikh/SterlingOMSTester/blob/master/tester.tar)</sup>
+<sub>[Download](https://github.com/jaydeeparikh/SterlingOMSTester/blob/master/tester.tar)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<sub>[Installation](#installation)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<sub>[Run from Commad Line](#running-sterling-test-tool-from-command-line)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<sub>[Run as Server](#running-sterling-test-tool-in-server-mode)</sub>
+
 # Sterling OMS Test Tool
 
 
