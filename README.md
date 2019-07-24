@@ -174,8 +174,8 @@ Use following parameters to supply input xml and template xml from curl command.
 ### NOTES:
 
 -	Test tool takes approximately 30 seconds to warm up-
--	For every test executed in command line mode.
--	For the first test executed in server mode.
+-		For every test executed in command line mode.
+-		For the first test executed in server mode.
 
 -	Server mode supports only HTTP protocol (HTTPS is not supported).
 
