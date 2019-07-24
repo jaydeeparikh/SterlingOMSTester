@@ -1,7 +1,9 @@
 <sub>[Download](https://github.com/jaydeeparikh/SterlingOMSTester/blob/master/tester.tar)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <sub>[Installation](#installation)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <sub>[Run from Commad Line](#running-sterling-test-tool-from-command-line)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<sub>[Run as Server](#running-sterling-test-tool-in-server-mode)</sub>
+<sub>[Run as Server](#running-sterling-test-tool-in-server-mode)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<sub>[Command Line Arguments](#command-line-arguments)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<sub>[Notes](#notes)</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 # Sterling OMS Test Tool
 
@@ -154,8 +156,8 @@ $ ./SterlingTestServer.sh -port=9000  -timeout=1800000  -nodebug
 $ curl     \
  --data-urlencode "-k=oob" \
  --data-urlencode "-c=getOrderList" \
- --data-urlencode "-u=131604" \
- --data-urlencode "-p=131604" \
+ --data-urlencode "-u=jaydeep.parikh" \
+ --data-urlencode "-p=thePassword" \
  --data-urlencode '-ix=<Order OrderHeaderKey="201906042102331198407"/>' \
  http://localhost:9876
 ```
